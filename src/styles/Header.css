@@ -1,0 +1,130 @@
+/* ===== Header Bar ===== */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 12px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+/* Left side: logo + title */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  color: #2563eb;
+}
+
+.header-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  letter-spacing: 0.3px;
+}
+
+/* Right side: icon controls + Manage button */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #666;
+  transition: background 0.15s, color 0.15s;
+  padding: 0;
+}
+
+.header-icon-btn:hover {
+  background: #f0f4f8;
+  color: #1a1a2e;
+}
+
+/* Toggle switch */
+.header-toggle {
+  display: inline-flex;
+  align-items: center;
+  width: 32px;
+  height: 18px;
+  background: #2563eb;
+  border-radius: 9px;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.header-toggle::after {
+  content: '';
+  position: absolute;
+  right: 3px;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: right 0.2s;
+}
+
+/* Badge counter */
+.header-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  background: #e5e7eb;
+  border-radius: 9px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #374151;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Manage button */
+.header-manage-btn {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 12px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  transition: background 0.15s;
+}
+
+.header-manage-btn:hover {
+  background: #1d4ed8;
+}
+
+.header-divider {
+  width: 1px;
+  height: 18px;
+  background: #e0e0e0;
+  margin: 0 2px;
+}

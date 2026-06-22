@@ -1,0 +1,97 @@
+/* ===== Info Bar ===== */
+
+.info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 28px;
+  padding: 0 12px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e8e8e8;
+  flex-shrink: 0;
+  gap: 24px;
+  user-select: none;
+}
+
+.info-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: #555555;
+  white-space: nowrap;
+}
+
+.info-bar-label {
+  font-weight: 600;
+  color: #333333;
+}
+
+.info-bar-value {
+  font-weight: 400;
+  color: #666666;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.2px;
+}
+
+.info-bar-gear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #888;
+  padding: 0;
+  transition: color 0.15s, background 0.15s;
+}
+
+.info-bar-gear:hover {
+  color: #333;
+  background: #f0f0f0;
+}
+
+/* ===== Background Color Picker ===== */
+
+.info-bar-color-picker {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.info-bar-color-swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.info-bar-select {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: #555;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 1px 4px;
+  height: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.info-bar-select:hover {
+  border-color: #aaa;
+}
+
+.info-bar-select:focus {
+  border-color: #4a90d9;
+  box-shadow: 0 0 0 1px rgba(74, 144, 217, 0.25);
+}
+
